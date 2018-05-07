@@ -4,7 +4,7 @@ import { Data } from './data';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/do';
+
 
 @Injectable()
 export class DataRetrivalService {
@@ -15,7 +15,7 @@ export class DataRetrivalService {
 
   getProducts(): Observable<Data[]> {
     return this.http.get<Data[]>(this._dataUrl)
-        .do(data => console.log('All: ' + JSON.stringify(data)))
+        
         .catch(this.handleError);
 }
 private handleError(err: HttpErrorResponse) {
