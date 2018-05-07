@@ -1,0 +1,18 @@
+<div class="panel-group card" *ngIf="perCardData">
+    <div class="panel panel-info">
+        <button style="border-radius: 12px; padding: 9px 17px" class="btn btn-warning pull-left"  routerLink="/" >Back</button>
+        <div class="panel-heading body text-center"><b>{{perCardData.title}}</b>
+       
+        </div>
+        <div class="panel-body">
+          {{perCardData.description}}
+          <br>
+        <span>
+       <p *ngIf="perCardData.isFavourite"><img  class="star" src="../assets/Images/star-icon.png" ><span>This is marked as Favourite</span> </p>   
+         <p *ngIf="!perCardData.isFavourite" ><img class="star" src="../assets/Images/star-empty.png" ><span> This is not marked as Favourite</span></p> 
+        </span>
+        </div>
+      </div>
+  
+  
+  </div>

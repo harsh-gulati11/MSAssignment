@@ -1,0 +1,68 @@
+.cardBlock {
+      width:20%;
+    border-radius: 1.313em;
+    float: left;
+    margin: 1.500em;
+    border: skyblue;
+    border-style: solid;
+  
+}
+
+.cardBlock:hover {
+    box-shadow: 0 0.5em 3em 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 0.313em 0.313em 0 0;
+    float: right
+}
+
+
+
+.title {
+  text-align: center;
+}
+.open {
+  text-align: right;
+   border-top-style: solid;
+   border-width: 0.063em;
+}
+
+table, th, tr, td {
+    border: 0.063em solid #E7E7E7;
+}
+.star {
+  width: 1.500em;
+  height: 1.500em;
+}
+
+.info {
+  float: left;
+}
+
+.desc {
+  float: right;
+}
+
+.header {
+    padding:.75rem 1.25rem;
+    margin-bottom:10px;
+    background-color:rgba(28, 207, 163, 0.03) ;
+      
+   }
+   .footer {
+    padding:3.75rem 1.25rem;
+    background-color:rgba(12, 90, 235, 0.03) ;
+   
+   }
+   .body
+   {
+       padding: 1em;
+   }
+   .open
+   {
+       float: right;
+   }
+
+
+  
