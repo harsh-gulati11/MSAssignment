@@ -24,7 +24,7 @@ this.routeService.params.forEach((param:Params)=>{
       this.cardsData = data;
       this.perCardData=this.cardsData.find(selectedCard=>selectedCard._id==param.id)
 
-      console.log(this.perCardData);
+     // console.log(this.perCardData);
           },
       error => this.errorMessage = <any>error);
 
